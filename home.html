@@ -11,24 +11,24 @@
 <section class="hero" id="hero">
   <div class="content">
     <h1> Too a place I call home. </h1>
-      <form onsubmit="sendEmail(); reset(); returnfalse;">
+      <form onsubmit="sendEmail(); reset(); return false;">
         <label for="love" id="text">What would you call it?</label>
       <textarea id="input" rows="14" cols="10" wrap="soft"> </textarea> 
       <button>Submit</button> 
       </form>
-      <script src="https://smtpjs.com/b3/smtp.js"></script>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
       <script>
         function sendEmail(){
           Email.send({
-            Host : "smtp.gmail.com",
-            Username : "jcnnr0928@gmail.com",
-            Password : "P$$w2007!",
+            Host : "smtp.elasticemail.com",
+            Username : "26jkeller@jarrellisd.net",
+            Password : "C07239E5D3AC82D78B001D1F88FB334A7F7F",
             To : '26jkeller@jarrellisd.net',
             From : "jcnnr0928@gmail.com",
             Subject : "Form",
             Body : document.getElementById('input').value
         }).then(
-          message => alert('Message Sent Successfully')
+          message => (message)
         );
 
         }
