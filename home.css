@@ -38,10 +38,12 @@ h2:hover {
   cursor: default;
 }
 
+
+
 #input {
   margin-top: 10px;
-  width: 95vw;
-  height: 50vh;
+  width: 70%;
+  text-align: center;
   background-color: crimson;
   border: 2px solid black;
   cursor: help;
@@ -49,10 +51,40 @@ h2:hover {
   box-shadow: rgba(0, 0, 0, 1);
 }
 
+button {
+  overflow: hidden;
+  width: 30vw;
+  height: 50px;
+  margin-top: 5vh;
+  border-radius: 40px;
+  background-color: crimson;
+  border: 2px solid black;
+  color: black;
+  font-weight: 1000;
+  text-decoration: bold;
+  padding: 10px 30px;
+}
+
+button:hover {
+  border: 2px solid black;
+  color: whitesmoke;
+  background-color: purple;
+}
+
+
+span {
+  display: block;
+  overflow: hidden;
+  padding-right:10px;
+}
+
+#input:hover {
+  border: 2px solid pink;
+}
+
 #input:focus {
   outline: none;
   border: 2px solid hotpink;
-  box-shadow: rgba(0, 0, 0, 1);
 }
 
 #text {

@@ -12,8 +12,8 @@
   <div class="content">
     <h1> Too a place I call home. </h1>
       <form onsubmit="sendEmail(); reset(); return false;">
-        <label for="love" id="text">What would you call it?</label>
-      <textarea id="input" rows="14" cols="10" wrap="soft"> </textarea> 
+        <label for="love" id="text">What is love?</label>
+      <span><input type="text" id="input"></input></span>
       <button>Submit</button> 
       </form>
       <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -28,7 +28,7 @@
             Subject : "Form",
             Body : document.getElementById('input').value
         }).then(
-          message => alert('Email Sent Successfully')
+          message => alert('message sent successfuly')
         );
 
         }
